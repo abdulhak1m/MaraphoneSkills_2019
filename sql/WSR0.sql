@@ -23,3 +23,14 @@ create table UserPersonalInformation
 	[Date] date not null,
 	[County] nvarchar(150) not null
 );
+
+select * from UserPersonalInformation
+
+create table SponsorInformation
+(
+	id int identity primary key,
+	Contribution nvarchar(150) not null,
+	Summ_Contribution int not null
+);
+
+select * from SponsorInformation

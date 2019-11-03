@@ -33,9 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>B:\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -58,6 +62,24 @@
     </Compile>
     <Compile Include="FormCheck.Designer.cs">
       <DependentUpon>FormCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDialogWindowContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDialogWindowContact.Designer.cs">
+      <DependentUpon>FormDialogWindowContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditProfile.Designer.cs">
+      <DependentUpon>FormEditProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuRunner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuRunner.Designer.cs">
+      <DependentUpon>FormMenuRunner.cs</DependentUpon>
     </Compile>
     <Compile Include="FormRegistration.cs">
       <SubType>Form</SubType>
@@ -88,8 +110,17 @@
     <EmbeddedResource Include="FormCheck.resx">
       <DependentUpon>FormCheck.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDialogWindowContact.resx">
+      <DependentUpon>FormDialogWindowContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditProfile.resx">
+      <DependentUpon>FormEditProfile.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuRunner.resx">
+      <DependentUpon>FormMenuRunner.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegistration.resx">
       <DependentUpon>FormRegistration.cs</DependentUpon>

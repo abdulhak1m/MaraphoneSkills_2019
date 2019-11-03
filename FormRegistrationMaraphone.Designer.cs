@@ -63,10 +63,15 @@
             this.label15 = new System.Windows.Forms.Label();
             this.signupButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
+            this.pnlDoneRegistr = new System.Windows.Forms.Panel();
+            this.okButton = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.pnlDoneRegistr.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -102,6 +107,7 @@
             this.btnBack.TabIndex = 2;
             this.btnBack.Text = "Назад";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // label1
             // 
@@ -352,8 +358,8 @@
             this.txt_installment_amount.Name = "txt_installment_amount";
             this.txt_installment_amount.Size = new System.Drawing.Size(164, 23);
             this.txt_installment_amount.TabIndex = 12;
+            this.txt_installment_amount.TextChanged += new System.EventHandler(this.Txt_installment_amount_TextChanged);
             this.txt_installment_amount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_installment_amount_KeyPress);
-            this.txt_installment_amount.Leave += new System.EventHandler(this.Txt_installment_amount_Leave);
             // 
             // cmb_contribution
             // 
@@ -454,6 +460,55 @@
             this.cancelButton.Text = "Отмена";
             this.cancelButton.UseVisualStyleBackColor = true;
             // 
+            // pnlDoneRegistr
+            // 
+            this.pnlDoneRegistr.Controls.Add(this.okButton);
+            this.pnlDoneRegistr.Controls.Add(this.label17);
+            this.pnlDoneRegistr.Controls.Add(this.label16);
+            this.pnlDoneRegistr.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlDoneRegistr.Location = new System.Drawing.Point(0, 0);
+            this.pnlDoneRegistr.Name = "pnlDoneRegistr";
+            this.pnlDoneRegistr.Size = new System.Drawing.Size(800, 714);
+            this.pnlDoneRegistr.TabIndex = 17;
+            // 
+            // okButton
+            // 
+            this.okButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+            this.okButton.FlatAppearance.BorderSize = 0;
+            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.okButton.ForeColor = System.Drawing.Color.White;
+            this.okButton.Location = new System.Drawing.Point(297, 180);
+            this.okButton.Name = "okButton";
+            this.okButton.Size = new System.Drawing.Size(207, 43);
+            this.okButton.TabIndex = 1;
+            this.okButton.Text = "OK";
+            this.okButton.UseVisualStyleBackColor = false;
+            this.okButton.Click += new System.EventHandler(this.OkButton_Click);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+            this.label17.Location = new System.Drawing.Point(228, 111);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(344, 22);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "С вами свяжутся по поводу оплаты.";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+            this.label16.Location = new System.Drawing.Point(126, 32);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(549, 50);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Спасибо за вашу регистрацию в качестве Бегуна\r\nв Maraphone Skills 2019";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FormRegistrationMaraphone
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -477,11 +532,13 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlDoneRegistr);
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MaximizeBox = false;
             this.Name = "FormRegistrationMaraphone";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormRegistrationMaraphone";
+            this.Load += new System.EventHandler(this.FormRegistrationMaraphone_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -489,6 +546,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.pnlDoneRegistr.ResumeLayout(false);
+            this.pnlDoneRegistr.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -530,5 +589,9 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button signupButton;
         private System.Windows.Forms.Button cancelButton;
+        private System.Windows.Forms.Panel pnlDoneRegistr;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button okButton;
     }
 }

@@ -126,14 +126,7 @@ namespace WSR_0
             if ((e.KeyChar <= 47 || e.KeyChar >= 58) && e.KeyChar != 8)
                 e.Handled = true;
         }
-
-        private void Txt_installment_amount_Leave(object sender, EventArgs e)
-        {
-            value = Convert.ToInt32(label15.Text);
-            value = Convert.ToInt32(txt_installment_amount.Text);
-            label15.Text = value.ToString();
-        }
-        private void SignupButton_Click(object sender, EventArgs e)
+        private async void SignupButton_Click(object sender, EventArgs e)
         {
             if (txt_installment_amount.Text == "" || cmb_contribution.Text == "")
                 MessageBox.Show("Пожалуйста, выберите спонсора из числа благотворительных организаций и внесите сумму спонсорского взноса", "Оповещение системы", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -143,9 +136,50 @@ namespace WSR_0
                     MessageBox.Show("Пожалуйста, выберите один из представленных марафонов!", "Оповещение системы", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else
                 {
-
+                    try
+                    {
+                        string query = $"insert into SponsorInformation values (@c, @p)";
+                        using (SqlConnection connection = new SqlConnection(Connection.GetSetring()))
+                        {
+                            await connection.OpenAsync();
+                            SqlCommand command = new SqlCommand(query, connection);
+                            command.Parameters.AddWithValue("@c", cmb_contribution.Text);
+                            command.Parameters.AddWithValue("@p", int.Parse(label15.Text));
+                            await command.ExecuteNonQueryAsync();
+                            pnlDoneRegistr.BringToFront();
+                        }
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, ex.Source, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
+        }
+
+        private void Txt_installment_amount_TextChanged(object sender, EventArgs e)
+        {
+            value = Convert.ToInt32(label15.Text);
+            value = Convert.ToInt32(txt_installment_amount.Text);
+            label15.Text = value.ToString();
+        }
+
+        private void FormRegistrationMaraphone_Load(object sender, EventArgs e) => timer1.Start();
+
+        private void OkButton_Click(object sender, EventArgs e)
+        {
+            SwitchFormStart();
+        }
+        private void SwitchFormStart()
+        {
+            ActiveForm.Hide();
+            FormMenuRunner formMenuRunner = new FormMenuRunner();
+            formMenuRunner.ShowDialog();
+            Close();
+        }
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            SwitchFormStart();
         }
     }
 }

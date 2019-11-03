@@ -1,0 +1,16 @@
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\bin\Debug\WSR_0.exe.config
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\bin\Debug\WSR_0.exe
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\bin\Debug\WSR_0.pdb
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Debug\WSR_0.csprojAssemblyReference.cache
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Debug\WSR_0.FormCheck.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Debug\WSR_0.FormEditProfile.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Debug\WSR_0.FormLogin.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Debug\WSR_0.FormMenuRunner.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Debug\WSR_0.FormRegistration.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Debug\WSR_0.FormRegistrationMaraphone.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Debug\WSR_0.FormStart.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Debug\WSR_0.Properties.Resources.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Debug\WSR_0.csproj.GenerateResource.cache
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Debug\WSR_0.csproj.CoreCompileInputs.cache
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Debug\WSR_0.exe
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Debug\WSR_0.pdb

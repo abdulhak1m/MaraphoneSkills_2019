@@ -45,10 +45,18 @@ namespace WSR_0
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            ActiveForm.Hide();
-            FormRegistrationMaraphone formRegistrationMaraphone = new FormRegistrationMaraphone();
-            formRegistrationMaraphone.ShowDialog();
-            Close();
+            //ActiveForm.Hide();
+            //FormRegistrationMaraphone formRegistrationMaraphone = new FormRegistrationMaraphone();
+            //formRegistrationMaraphone.ShowDialog();
+            //Close();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            //ActiveForm.Hide();
+            //FormMenuRunner formMenuRunner = new FormMenuRunner();
+            //formMenuRunner.ShowDialog();
+            //Close();
         }
     }
 }
