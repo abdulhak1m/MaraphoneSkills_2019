@@ -11,3 +11,4 @@ G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\W
 G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormStart.resources
 G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormCheck.resources
 G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormRegistration.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormRegistrationMaraphone.resources

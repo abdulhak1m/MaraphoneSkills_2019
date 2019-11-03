@@ -42,5 +42,13 @@ namespace WSR_0
             formCheck.ShowDialog();
             Close();
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            ActiveForm.Hide();
+            FormRegistrationMaraphone formRegistrationMaraphone = new FormRegistrationMaraphone();
+            formRegistrationMaraphone.ShowDialog();
+            Close();
+        }
     }
 }

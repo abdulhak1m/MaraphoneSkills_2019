@@ -39,6 +39,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblTime = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -138,6 +139,16 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(57, 250);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(115, 49);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "тест";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
             // FormStart
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -147,6 +158,7 @@
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.btn);
             this.Controls.Add(this.btnSP);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSB);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -174,6 +186,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lblTime;
+        private System.Windows.Forms.Button button1;
     }
 }
 

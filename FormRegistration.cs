@@ -182,5 +182,16 @@ namespace WSR_0
                 MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void PictureBox1_Paint(object sender, PaintEventArgs e)
+        {
+            if (pictureBox1.Image == null)
+            {
+                using (Font myFont = new Font("Century Gothic", 20))
+                {
+                    e.Graphics.DrawString("Фото", myFont, Brushes.Gray, new Point(2, 2));
+                }
+            }
+        }
     }
 }

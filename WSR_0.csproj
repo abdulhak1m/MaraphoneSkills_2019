@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -92,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegistration.resx">
       <DependentUpon>FormRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrationMaraphone.resx">
+      <DependentUpon>FormRegistrationMaraphone.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormStart.resx">
       <DependentUpon>FormStart.cs</DependentUpon>

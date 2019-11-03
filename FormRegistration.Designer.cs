@@ -310,6 +310,7 @@
             // 
             // cmb_Gender
             // 
+            this.cmb_Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Gender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
             this.cmb_Gender.FormattingEnabled = true;
             this.cmb_Gender.Items.AddRange(new object[] {
@@ -323,12 +324,14 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(676, 194);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(185, 140);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.PictureBox1_Paint);
             // 
             // btn_ShowPicture
             // 
@@ -353,6 +356,7 @@
             // 
             // cmb_Country
             // 
+            this.cmb_Country.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Country.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
             this.cmb_Country.FormattingEnabled = true;
             this.cmb_Country.Items.AddRange(new object[] {
