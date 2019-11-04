@@ -43,7 +43,7 @@ namespace WSR_0
                 using (SqlConnection connection = new SqlConnection(Connection.GetSetring()))
                 {
                     await connection.OpenAsync();
-                    SqlCommand command = new SqlCommand("SELECT * from UserPersonalInformation", connection);
+                    SqlCommand command = new SqlCommand("SELECT * from UserPersonalInformation  where Email = '" + FormLogin.email + "'", connection);
                     using (SqlDataReader dataReader = command.ExecuteReader())
                     {
                         while (dataReader.Read())
@@ -191,7 +191,7 @@ namespace WSR_0
                     using (SqlConnection connection = new SqlConnection(Connection.GetSetring()))
                     {
                         await connection.OpenAsync();
-                        SqlCommand command = new SqlCommand("UPDATE UserPersonalInformation SET Email = @e, [Password]=@p, [Name]=@n, [Surname]=@s, [Gender]=@g,[Picture_name]=@pn, [Image]=@picture, [Date]=@d, [County]=@cn", connection);
+                        SqlCommand command = new SqlCommand("UPDATE UserPersonalInformation SET Email = @e, [Password]=@p, [Name]=@n, [Surname]=@s, [Gender]=@g,[Picture_name]=@pn, [Image]=@picture, [Date]=@d, [County]=@cn where Email = '" + FormLogin.email + "'", connection);
                         command.Parameters.AddWithValue("@e", lblEmail.Text);
                         command.Parameters.AddWithValue("@p", txt_Password.Text);
                         command.Parameters.AddWithValue("@n", txt_name.Text);

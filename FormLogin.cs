@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace WSR_0
 {
     public partial class FormLogin : Form
     {
+        public static string email;
         public FormLogin()
         {
             InitializeComponent();
@@ -53,5 +55,42 @@ namespace WSR_0
         }
 
         private void FormLogin_Load(object sender, EventArgs e) =>  timer1.Start();
+
+        private async void BtnLogin_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtEmail.Text) && !string.IsNullOrEmpty(txtPassword.Text))
+            {
+
+                try
+                {
+                    string query = "SELECT * FROM UserPersonalInformation WHERE Email = '" + txtEmail.Text.Trim() + "' and [Password] = '" + txtPassword.Text.Trim() + "'";
+                    using (SqlConnection connection = new SqlConnection(Connection.GetSetring()))
+                    {
+                        await connection.OpenAsync();
+                        SqlCommand command = new SqlCommand(query, connection);
+                        SqlDataReader dataReader = command.ExecuteReader();
+                        if (dataReader.HasRows)
+                        {
+                            while (dataReader.Read())
+                            {
+                                email = dataReader["Email"].ToString();
+                            }
+                            ActiveForm.Hide();
+                            FormMenuRunner runner = new FormMenuRunner();
+                            runner.ShowDialog();
+                            Close();
+                        }
+                        else
+                            MessageBox.Show("Не верный Email или Пароль. Пожалуйста, повторите попытку!", "Уведомление системы!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Уведомление системы!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+                MessageBox.Show("Заполните поля!", "Уведомление системы!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
     }
 }

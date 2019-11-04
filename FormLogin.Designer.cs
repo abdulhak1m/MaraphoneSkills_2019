@@ -63,13 +63,16 @@
             // 
             // btnBack
             // 
+            this.btnBack.BackColor = System.Drawing.Color.Silver;
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.ForeColor = System.Drawing.Color.Black;
             this.btnBack.Location = new System.Drawing.Point(15, 27);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(96, 33);
             this.btnBack.TabIndex = 2;
             this.btnBack.Text = "Назад";
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // label1
@@ -98,12 +101,16 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(596, 369);
+            this.btnLogin.BackColor = System.Drawing.Color.Silver;
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Location = new System.Drawing.Point(656, 368);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(103, 32);
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Войти";
-            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // txtEmail
             // 
@@ -150,12 +157,15 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(463, 369);
+            this.btnCancel.BackColor = System.Drawing.Color.Silver;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Location = new System.Drawing.Point(523, 368);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(103, 32);
             this.btnCancel.TabIndex = 2;
             this.btnCancel.Text = "Отмена";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // panel2
