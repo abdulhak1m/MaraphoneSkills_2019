@@ -117,56 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="map-icon-drinks" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\map-icon-drinks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="label3.Text" xml:space="preserve">
+    <value>В пердыдущие годы марафон был проведён в Осаке, Япония (2014); Лейпицг, Германия (2013);
+Ханой, Вьетнам (2012) и Йорк, Англия (2011).
+В прошлом году, MaraphoneSkills очень зрелищно, пройшёл в Сан-Пауло, Бразилия, он стал
+самым большим фестивалем бега. Это финансовый центр Бразилии и самый большой
+город в Южной Америке. Сан-Пауло увидели тысяча бегунов, которые бежали мимо небоскрёбов,
+зелёные парки и великолепная архитектура.
+Этот фестиваль привлекает рекордное количество бегунов со всего мира, особое 
+внимание было обращено на участников из Кенни и Ямайки, поскольку мы надеялись увидеть 
+победителя 2014 года.
+(Эфиоп закончил гонку зп 45 минут и 4 секунды).</value>
   </data>
-  <data name="marathon-skills-2017-marathon-map1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\marathon-skills-2017-marathon-map.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="label6.Text" xml:space="preserve">
+    <value>- Программа "Самба" Полный Марафон начнётся в Руа-Ду-Американо в 6 утра.
+- Программа "Джанго" Полумарафон начнется в 7 утра, Бегуны будут стартовать недалеко от 
+пересечения улицы "Pya Ciniciata и Авенида".
+- Программа "Капоэйра" в 5 км, забег для новичков начнётся в 15 часов.
+Наши новички побегут от Меморила Унинове.</value>
   </data>
-  <data name="bmi-obese-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bmi-obese-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="male-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\male-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_sort_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_sort_down.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="marathon-skills-2017-marathon-map" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\marathon-skills-2017-marathon-map.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_info_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_info_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="map-icon-information1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\map-icon-information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="map-icon-information" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\map-icon-information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bmi-overweight-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bmi-overweight-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bmi-underweight-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bmi-underweight-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="female-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\female-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="map-icon-energy-bars" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\map-icon-energy-bars.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bmi-healthy-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bmi-healthy-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_info_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_info_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="map-icon-medical" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\map-icon-medical.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="map-icon-toilets" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\map-icon-toilets.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
 </root>

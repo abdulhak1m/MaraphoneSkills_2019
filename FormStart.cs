@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WSR_0
@@ -42,21 +35,12 @@ namespace WSR_0
             formCheck.ShowDialog();
             Close();
         }
-
-        private void Button1_Click(object sender, EventArgs e)
+        private void Btn_Click(object sender, EventArgs e)
         {
-            //ActiveForm.Hide();
-            //FormRegistrationMaraphone formRegistrationMaraphone = new FormRegistrationMaraphone();
-            //formRegistrationMaraphone.ShowDialog();
-            //Close();
-        }
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-            //ActiveForm.Hide();
-            //FormMenuRunner formMenuRunner = new FormMenuRunner();
-            //formMenuRunner.ShowDialog();
-            //Close();
+            ActiveForm.Hide();
+            FormAbout formAbout = new FormAbout();
+            formAbout.ShowDialog();
+            Close();
         }
     }
 }

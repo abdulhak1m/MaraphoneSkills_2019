@@ -17,3 +17,11 @@ G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\bin\Release\B
 G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.csprojAssemblyReference.cache
 G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormDialogWindowContact.resources
 G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.csproj.CopyComplete
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormAbout.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormBMICalculator.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormBMRCalculater.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormBMRinfo.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormIformationOfMaraphone.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormInteractiveMap.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormCheckPoint1.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormCheckPoint2.resources

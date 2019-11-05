@@ -57,11 +57,41 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBMICalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBMICalculator.Designer.cs">
+      <DependentUpon>FormBMICalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBMRinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBMRinfo.Designer.cs">
+      <DependentUpon>FormBMRinfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCheck.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormCheck.Designer.cs">
       <DependentUpon>FormCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckPoint1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckPoint1.Designer.cs">
+      <DependentUpon>FormCheckPoint1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckPoint2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckPoint2.Designer.cs">
+      <DependentUpon>FormCheckPoint2.cs</DependentUpon>
     </Compile>
     <Compile Include="FormDialogWindowContact.cs">
       <SubType>Form</SubType>
@@ -74,6 +104,18 @@
     </Compile>
     <Compile Include="FormEditProfile.Designer.cs">
       <DependentUpon>FormEditProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIformationOfMaraphone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIformationOfMaraphone.Designer.cs">
+      <DependentUpon>FormIformationOfMaraphone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInteractiveMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInteractiveMap.Designer.cs">
+      <DependentUpon>FormInteractiveMap.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMenuRunner.cs">
       <SubType>Form</SubType>
@@ -105,16 +147,43 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormBMRCalculater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBMRCalculater.Designer.cs">
+      <DependentUpon>FormBMRCalculater.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBMICalculator.resx">
+      <DependentUpon>FormBMICalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBMRinfo.resx">
+      <DependentUpon>FormBMRinfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCheck.resx">
       <DependentUpon>FormCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckPoint1.resx">
+      <DependentUpon>FormCheckPoint1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckPoint2.resx">
+      <DependentUpon>FormCheckPoint2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDialogWindowContact.resx">
       <DependentUpon>FormDialogWindowContact.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEditProfile.resx">
       <DependentUpon>FormEditProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIformationOfMaraphone.resx">
+      <DependentUpon>FormIformationOfMaraphone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInteractiveMap.resx">
+      <DependentUpon>FormInteractiveMap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -131,6 +200,9 @@
     <EmbeddedResource Include="FormStart.resx">
       <DependentUpon>FormStart.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormBMRCalculater.resx">
+      <DependentUpon>FormBMRCalculater.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -139,6 +211,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="DataSet.xsc">
       <DependentUpon>DataSet.xsd</DependentUpon>
@@ -163,6 +236,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_sort_down.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmi-healthy-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmi-obese-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmi-overweight-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmi-underweight-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_info_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_info_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marathon-skills-2017-marathon-map.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-energy-bars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-drinks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-medical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-toilets.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

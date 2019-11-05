@@ -156,7 +156,6 @@ namespace WSR_0
                 }
             }
         }
-
         private void Txt_installment_amount_TextChanged(object sender, EventArgs e)
         {
             value = Convert.ToInt32(label15.Text);

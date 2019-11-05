@@ -103,6 +103,7 @@
             this.btn.TabIndex = 2;
             this.btn.Text = "Я хочу узнать больше о событии";
             this.btn.UseVisualStyleBackColor = true;
+            this.btn.Click += new System.EventHandler(this.Btn_Click);
             // 
             // loginButton
             // 
