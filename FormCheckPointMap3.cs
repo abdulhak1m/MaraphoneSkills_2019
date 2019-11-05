@@ -10,14 +10,15 @@ using System.Windows.Forms;
 
 namespace WSR_0
 {
-    public partial class FormCheckPoint2 : Form
+    public partial class FormCheckPointMap3 : Form
     {
-        public FormCheckPoint2()
+        public FormCheckPointMap3()
         {
             InitializeComponent();
             closeButton.Click += (s, e) => { Close(); };
             LocationForm();
         }
+
         private void LocationForm()
         {
             int move = 0, x = 0, y = 0;

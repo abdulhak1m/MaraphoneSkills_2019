@@ -25,3 +25,12 @@ G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\W
 G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormInteractiveMap.resources
 G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormCheckPoint1.resources
 G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormCheckPoint2.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormCheckPointMap3.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormCheckPoint4.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormCheckPoint5.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormCheckPoint6.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormCheckPoint7.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormCheckPoint8.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormStart01.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormStart02.resources
+G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormStarts03.resources

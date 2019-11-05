@@ -57,6 +57,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FormStart01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStart01.Designer.cs">
+      <DependentUpon>FormStart01.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAbout.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,36 @@
     <Compile Include="FormCheckPoint2.Designer.cs">
       <DependentUpon>FormCheckPoint2.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCheckPoint4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckPoint4.Designer.cs">
+      <DependentUpon>FormCheckPoint4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckPoint5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckPoint5.Designer.cs">
+      <DependentUpon>FormCheckPoint5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckPoint6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckPoint6.Designer.cs">
+      <DependentUpon>FormCheckPoint6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckPoint7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckPoint7.Designer.cs">
+      <DependentUpon>FormCheckPoint7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckPoint8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckPoint8.Designer.cs">
+      <DependentUpon>FormCheckPoint8.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDialogWindowContact.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +158,12 @@
     </Compile>
     <Compile Include="FormMenuRunner.Designer.cs">
       <DependentUpon>FormMenuRunner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckPointMap3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckPointMap3.Designer.cs">
+      <DependentUpon>FormCheckPointMap3.cs</DependentUpon>
     </Compile>
     <Compile Include="FormRegistration.cs">
       <SubType>Form</SubType>
@@ -153,8 +195,24 @@
     <Compile Include="FormBMRCalculater.Designer.cs">
       <DependentUpon>FormBMRCalculater.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormStart02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStart02.Designer.cs">
+      <DependentUpon>FormStart02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStarts03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStarts03.Designer.cs">
+      <DependentUpon>FormStarts03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormStart01.resx">
+      <DependentUpon>FormStart01.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAbout.resx">
       <DependentUpon>FormAbout.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,6 +230,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCheckPoint2.resx">
       <DependentUpon>FormCheckPoint2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckPoint4.resx">
+      <DependentUpon>FormCheckPoint4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckPoint5.resx">
+      <DependentUpon>FormCheckPoint5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckPoint6.resx">
+      <DependentUpon>FormCheckPoint6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckPoint7.resx">
+      <DependentUpon>FormCheckPoint7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckPoint8.resx">
+      <DependentUpon>FormCheckPoint8.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDialogWindowContact.resx">
       <DependentUpon>FormDialogWindowContact.cs</DependentUpon>
@@ -191,6 +264,9 @@
     <EmbeddedResource Include="FormMenuRunner.resx">
       <DependentUpon>FormMenuRunner.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckPointMap3.resx">
+      <DependentUpon>FormCheckPointMap3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRegistration.resx">
       <DependentUpon>FormRegistration.cs</DependentUpon>
     </EmbeddedResource>
@@ -202,6 +278,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormBMRCalculater.resx">
       <DependentUpon>FormBMRCalculater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStart02.resx">
+      <DependentUpon>FormStart02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStarts03.resx">
+      <DependentUpon>FormStarts03.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -281,6 +363,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\map-icon-toilets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-start.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

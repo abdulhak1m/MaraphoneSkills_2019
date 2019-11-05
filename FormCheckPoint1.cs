@@ -16,6 +16,14 @@ namespace WSR_0
         {
             InitializeComponent();
             closeButton.Click += (s, e) => { Close(); };
+            LocationForm();
+        }
+        private void LocationForm()
+        {
+            int move = 0, x = 0, y = 0;
+            topPanel.MouseDown += (s, e) => { move = 1; x = e.X; y = e.Y; };
+            topPanel.MouseMove += (s, e) => { if (move == 1) SetDesktopLocation(MousePosition.X - x, MousePosition.Y - y); };
+            topPanel.MouseUp += (s, e) => { move = 0; };
         }
     }
 }

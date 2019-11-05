@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace WSR_0
 {
-    public partial class FormCheckPoint2 : Form
+    public partial class FormCheckPoint5 : Form
     {
-        public FormCheckPoint2()
+        public FormCheckPoint5()
         {
             InitializeComponent();
-            closeButton.Click += (s, e) => { Close(); };
             LocationForm();
+            closeButton.Click += (s, e) => { Close(); };
         }
         private void LocationForm()
         {

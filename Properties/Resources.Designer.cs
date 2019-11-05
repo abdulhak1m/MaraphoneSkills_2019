@@ -203,6 +203,16 @@ namespace WSR_0.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap map_icon_start {
+            get {
+                object obj = ResourceManager.GetObject("map-icon-start", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap map_icon_toilets {
             get {
                 object obj = ResourceManager.GetObject("map-icon-toilets", resourceCulture);
