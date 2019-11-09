@@ -69,3 +69,5 @@ C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.csproj.Co
 C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.exe
 C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.pdb
 C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormAdmin.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormUsers.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormVolunteers.resources

@@ -213,6 +213,18 @@
     <Compile Include="FormStarts03.Designer.cs">
       <DependentUpon>FormStarts03.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsers.Designer.cs">
+      <DependentUpon>FormUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVolunteers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVolunteers.Designer.cs">
+      <DependentUpon>FormVolunteers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interface.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -293,6 +305,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormStarts03.resx">
       <DependentUpon>FormStarts03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsers.resx">
+      <DependentUpon>FormUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVolunteers.resx">
+      <DependentUpon>FormVolunteers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

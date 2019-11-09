@@ -10,43 +10,43 @@ using System.Windows.Forms;
 
 namespace WSR_0
 {
-    public partial class FormAdmin : Form
+    public partial class FormUsers : Form
     {
-        public FormAdmin()
+        public FormUsers()
         {
             InitializeComponent();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            DateTime maraphoneTime = new DateTime(2019, 10, 12, 6, 0, 0);
+            DateTime maraphoneTime = new DateTime();
             TimeSpan totalTime = maraphoneTime - DateTime.Now;
             lblTimer.Text = totalTime.Days + " дней " + totalTime.Hours + " часов и " + totalTime.Minutes + " минут до старта Марафона";
         }
 
-        private void FormAdmin_Load(object sender, EventArgs e)
+        private void FormUsers_Load(object sender, EventArgs e)
         {
             timer1.Start();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
+            ActiveForm.Hide();
+            FormAdmin admin = new FormAdmin();
+            admin.ShowDialog();
+            Close();
+        }
+
+        private void btn_logOut_Click(object sender, EventArgs e)
+        {
             DialogResult dialog = MessageBox.Show("Вы действительно хотите покинуть свой профиль?", "Оповещение системы!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if(dialog == DialogResult.Yes)
+            if (dialog == DialogResult.Yes)
             {
                 ActiveForm.Hide();
                 FormStart start = new FormStart();
                 start.ShowDialog();
                 Close();
             }
-        }
-
-        private void btn_Users_Click(object sender, EventArgs e)
-        {
-            ActiveForm.Hide();
-            FormUsers users = new FormUsers();
-            users.ShowDialog();
-            Close();
         }
     }
 }
