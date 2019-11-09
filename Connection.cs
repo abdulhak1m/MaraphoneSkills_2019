@@ -10,7 +10,7 @@ namespace WSR_0
     {
         public static string GetSetring()
         {
-            return @"Data Source=DESKTOP-57F7258;Initial Catalog=WS;Integrated Security=True";
+            return @"Data Source=DESKTOP-6FAKA40;Initial Catalog=db2;Integrated Security=True";
         }
     }
 }

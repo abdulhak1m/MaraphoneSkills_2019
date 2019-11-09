@@ -22,19 +22,21 @@ namespace WSR_0
             PassowrdBox(txt_ConfirmPassword, showConfirmPassword);
             txt_ConfirmPassword.TextChanged += (s, e) => { PasswordCheck(); };
         }
-
+        // время до страта марафона
         private void Timer1_Tick(object sender, EventArgs e)
         {
             DateTime maraphoneTime = new DateTime(2019, 12, 10, 6, 0, 0);
             TimeSpan totalTime = maraphoneTime - DateTime.Now;
             lblTimer.Text = totalTime.Days + " дней " + totalTime.Hours + " часов и " + totalTime.Minutes + " минут до старта марафона";
         }
+        // позволяет скрытно вводить пароль
         private void PassowrdBox(TextBox textBox, Button button)
         {
             textBox.TextChanged += (s, e) => { textBox.UseSystemPasswordChar = true; };
             button.MouseDown += (s, e) => { textBox.UseSystemPasswordChar = false; };
             button.MouseUp += (s, e) => { textBox.UseSystemPasswordChar = true; };
         }
+        // при загрузке формы редактирования, в форму должны загрузиться все данные, авторизованного пользователя
         private async void FormEditProfile_Load(object sender, EventArgs e)
         {
             timer1.Start();
@@ -43,7 +45,7 @@ namespace WSR_0
                 using (SqlConnection connection = new SqlConnection(Connection.GetSetring()))
                 {
                     await connection.OpenAsync();
-                    SqlCommand command = new SqlCommand("SELECT * from UserPersonalInformation  where Email = '" + FormLogin.email + "'", connection);
+                    SqlCommand command = new SqlCommand("SELECT * FROM UserPersonalInformation  WHERE Email = '" + FormLogin.email + "'", connection);
                     using (SqlDataReader dataReader = command.ExecuteReader())
                     {
                         while (dataReader.Read())
@@ -71,6 +73,7 @@ namespace WSR_0
                 MessageBox.Show(ex.Message, ex.Source, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        // переход на форму Меню бегуна
         private void SwitchFormMenu()
         {
             ActiveForm.Hide();
@@ -78,11 +81,12 @@ namespace WSR_0
             formMenuRunner.ShowDialog();
             Close();
         }
+        // переход на форму Меню бегуна
         private void BtnBack_Click(object sender, EventArgs e)
         {
             SwitchFormMenu();
         }
-
+        // переход на стартовую форму
         private void Btn_logOut_Click(object sender, EventArgs e)
         {
             ActiveForm.Hide();
@@ -91,11 +95,13 @@ namespace WSR_0
             Close();
         }
 
+        // переход на форму Меню бегуна
         private void Btn_Cancel_Click(object sender, EventArgs e)
         {
             SwitchFormMenu();
         }
         OpenFileDialog ofd = new OpenFileDialog();
+        // метод загрузки изображения в PictureBox
         private void Open()
         {
             try
@@ -116,6 +122,7 @@ namespace WSR_0
                 MessageBox.Show(ex.Message, "Произошла исключение!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        // общаемся к методу Open загрузки изображения на PictureBox
         private void Btn_Browse_Click(object sender, EventArgs e)
         {
             Open();
@@ -133,6 +140,7 @@ namespace WSR_0
                 btn_Save.Enabled = true;
             }
         }
+        // надпись на элементе управления PictureBox
         private void PictureBox1_Paint(object sender, PaintEventArgs e)
         {
             if (pictureBox1.Image == null)
@@ -143,21 +151,22 @@ namespace WSR_0
                 }
             }
         }
-
+        // идёт процесс сохранения изменений
         private async void Btn_Save_Click(object sender, EventArgs e)
         {
             MemoryStream ms = new MemoryStream();
             pictureBox1.Image.Save(ms, pictureBox1.Image.RawFormat);
             byte[] a = ms.GetBuffer();
             ms.Close();
-
+            // эти переменные нужны для проверки корректности введённого пароля
             bool digit = false;
             bool spec = false;
             bool lowChar = false;
 
+            // мы должны прогонять, то что ввёл пользователь в поле Пароль, дабы убедиться, что все данные введены корректно
             for (int i = 0; i < txt_Password.TextLength; i++)
             {
-                if (Char.IsDigit(txt_Password.Text[i]))
+                if (char.IsDigit(txt_Password.Text[i]))
                 {
                     digit = true;
                     break;
@@ -165,7 +174,7 @@ namespace WSR_0
             }
             for (int i = 0; i < txt_Password.TextLength; i++)
             {
-                if (Char.IsLower(txt_Password.Text[i]))
+                if (char.IsLower(txt_Password.Text[i]))
                 {
                     lowChar = true;
                     break;

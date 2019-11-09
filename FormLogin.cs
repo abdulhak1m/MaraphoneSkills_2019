@@ -63,12 +63,16 @@ namespace WSR_0
 
                 try
                 {
-                    string query = "SELECT * FROM UserPersonalInformation WHERE Email = '" + txtEmail.Text.Trim() + "' and [Password] = '" + txtPassword.Text.Trim() + "'";
+                    string query = "SELECT * FROM [UserPersonalInformation] WHERE Email = '" + txtEmail.Text.Trim() + "' and [Password] = '" + txtPassword.Text.Trim() + "'";
+
+                    //string query1 = "SELECT * FROM [Administration] WHERE Email = '" + txtEmail.Text.Trim() + "' and [Password] = '" + txtPassword.Text.Trim() + "'";
                     using (SqlConnection connection = new SqlConnection(Connection.GetSetring()))
                     {
                         await connection.OpenAsync();
                         SqlCommand command = new SqlCommand(query, connection);
+                        //SqlCommand command1 = new SqlCommand(query1, connection);
                         SqlDataReader dataReader = command.ExecuteReader();
+                        //SqlDataReader dataReader1 = command1.ExecuteReader();
                         if (dataReader.HasRows)
                         {
                             while (dataReader.Read())
@@ -80,6 +84,17 @@ namespace WSR_0
                             runner.ShowDialog();
                             Close();
                         }
+                        //else if (dataReader1.HasRows)
+                        //{
+                        //    while (dataReader1.Read())
+                        //    {
+                        //        email = dataReader1["Email"].ToString();
+                        //    }
+                        //    ActiveForm.Hide();
+                        //    FormAdmin admin = new FormAdmin();
+                        //    admin.ShowDialog();
+                        //    Close();
+                        //}
                         else
                             MessageBox.Show("Не верный Email или Пароль. Пожалуйста, повторите попытку!", "Уведомление системы!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }

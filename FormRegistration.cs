@@ -20,9 +20,16 @@ namespace WSR_0
             InitializeComponent();
             PassowrdBox(txt_Password, showPassword);
             PassowrdBox(txt_ConfirmPassword, showConfirmPassword);
+            // проверка пароля на совпадение
             txt_ConfirmPassword.TextChanged += (s, e) => { CheckPassword(); };
+            // если после пордтверждения пароля, пользователь решит дополнить пароль, идёт повторная проверка полей
+            txt_Password.TextChanged += (s, e) =>
+            {
+                if (txt_ConfirmPassword.Text != "")
+                    CheckPassword();
+            };
         }
-
+        // таймер до начала Марафона
         private void Timer1_Tick(object sender, EventArgs e)
         {
             DateTime maraphoneTime = new DateTime(2019, 12, 10, 6, 0, 0);
@@ -123,7 +130,7 @@ namespace WSR_0
 
                     for(int i = 0; i < txt_Password.TextLength; i++)
                     {
-                        if (Char.IsDigit(txt_Password.Text[i]))
+                        if (char.IsDigit(txt_Password.Text[i]))
                         {
                             digit = true;
                             break;
@@ -131,7 +138,7 @@ namespace WSR_0
                     }
                     for(int i = 0; i < txt_Password.TextLength; i++)
                     {
-                        if (Char.IsLower(txt_Password.Text[i]))
+                        if (char.IsLower(txt_Password.Text[i]))
                         {
                             lowChar = true;
                             break;
@@ -156,7 +163,7 @@ namespace WSR_0
                         using(SqlConnection connection = new SqlConnection(Connection.GetSetring()))
                         {
                             await connection.OpenAsync();
-                            string query = $"insert into UserPersonalInformation values (@e,@p,@n,@s,@g,@pn,@picture,@d,@cn)";
+                            string query = $"INSERT INTO [UserPersonalInformation] VALUES (@e,@p,@n,@s,@g,@pn,@picture,@d,@cn)";
                             SqlCommand command = new SqlCommand(query, connection);
                             command.Parameters.AddWithValue("@e", txt_Email.Text);
                             command.Parameters.AddWithValue("@p", txt_Password.Text);

@@ -34,3 +34,38 @@ G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\W
 G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormStart01.resources
 G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormStart02.resources
 G:\WinFormApp (Сентябрь)\Подготовка_к_WSR\WSR_0\obj\Release\WSR_0.FormStarts03.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\bin\Release\WSR_0.exe.config
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\bin\Release\WSR_0.exe
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\bin\Release\WSR_0.pdb
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.csprojAssemblyReference.cache
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormStart01.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormAbout.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormBMICalculator.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormBMRinfo.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormCheck.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormCheckPoint1.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormCheckPoint2.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormCheckPoint4.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormCheckPoint5.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormCheckPoint6.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormCheckPoint7.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormCheckPoint8.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormDialogWindowContact.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormEditProfile.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormIformationOfMaraphone.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormInteractiveMap.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormLogin.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormMenuRunner.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormCheckPointMap3.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormRegistration.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormRegistrationMaraphone.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormStart.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormBMRCalculater.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormStart02.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormStarts03.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.Properties.Resources.resources
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.csproj.GenerateResource.cache
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.csproj.CopyComplete
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.exe
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.pdb
+C:\Users\user\Desktop\хз\хз\MaraphoneSkills_2019\obj\Release\WSR_0.FormAdmin.resources
