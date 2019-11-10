@@ -57,6 +57,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormStart01.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,9 +213,18 @@
     <Compile Include="FormStarts03.Designer.cs">
       <DependentUpon>FormStarts03.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsers.Designer.cs">
+      <DependentUpon>FormUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interface.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormStart01.resx">
       <DependentUpon>FormStart01.cs</DependentUpon>
     </EmbeddedResource>
@@ -284,6 +299,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormStarts03.resx">
       <DependentUpon>FormStarts03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsers.resx">
+      <DependentUpon>FormUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

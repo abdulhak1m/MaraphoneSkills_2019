@@ -21,6 +21,11 @@ namespace WSR_0
             PassowrdBox(txt_Password, showPassword);
             PassowrdBox(txt_ConfirmPassword, showConfirmPassword);
             txt_ConfirmPassword.TextChanged += (s, e) => { PasswordCheck(); };
+            txt_Password.TextChanged += (s, e) => 
+            {
+                if (txt_ConfirmPassword.Text != "")
+                    PasswordCheck();
+            };
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
@@ -151,36 +156,39 @@ namespace WSR_0
             byte[] a = ms.GetBuffer();
             ms.Close();
 
-            bool digit = false;
-            bool spec = false;
-            bool lowChar = false;
+            if (txt_Password.Text != "")
+            {
+                bool digit = false;
+                bool spec = false;
+                bool lowChar = false;
 
-            for (int i = 0; i < txt_Password.TextLength; i++)
-            {
-                if (Char.IsDigit(txt_Password.Text[i]))
+                for (int i = 0; i < txt_Password.TextLength; i++)
                 {
-                    digit = true;
-                    break;
+                    if (char.IsDigit(txt_Password.Text[i]))
+                    {
+                        digit = true;
+                        break;
+                    }
                 }
-            }
-            for (int i = 0; i < txt_Password.TextLength; i++)
-            {
-                if (Char.IsLower(txt_Password.Text[i]))
+                for (int i = 0; i < txt_Password.TextLength; i++)
                 {
-                    lowChar = true;
-                    break;
+                    if (char.IsLower(txt_Password.Text[i]))
+                    {
+                        lowChar = true;
+                        break;
+                    }
                 }
-            }
-            for (int i = 0; i < txt_Password.TextLength; i++)
-            {
-                if (txt_Password.Text[i] == '#' || txt_Password.Text[i] == '!' || txt_Password.Text[i] == '@' || txt_Password.Text[i] == '$' || txt_Password.Text[i] == '%' || txt_Password.Text[i] == '^')
+                for (int i = 0; i < txt_Password.TextLength; i++)
                 {
-                    spec = true;
-                    break;
+                    if (txt_Password.Text[i] == '#' || txt_Password.Text[i] == '!' || txt_Password.Text[i] == '@' || txt_Password.Text[i] == '$' || txt_Password.Text[i] == '%' || txt_Password.Text[i] == '^')
+                    {
+                        spec = true;
+                        break;
+                    }
                 }
+                if (txt_Password.TextLength < 6 || !spec || !digit || !lowChar)
+                    MessageBox.Show("Некорректный формат пароля! Длина пароля должно быть не менее шести символов, из которых должна быть, как минимум, одна буква нижнего регистра, одна цифра и одна из следующих символов: !,#,%,^,@", "Оповещение системы!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            if (txt_Password.TextLength < 6 || !spec || !digit || !lowChar)
-                MessageBox.Show("Некорректный формат пароля! Длина пароля должно быть не менее шести символов, из которых должна быть, как минимум, одна буква нижнего регистра, одна цифра и одна из следующих символов: !,#,%,^,@", "Оповещение системы!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             DateTime dateOfBirth = Convert.ToDateTime(dtp_DateOfBirth.Value);
             if (DateTime.Now.Year - dateOfBirth.Year < 10)
                 MessageBox.Show("Возраст бегуна на момент регистрации должен быть не менее 10-ти лет!", "Оповещение системы!", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -191,9 +199,10 @@ namespace WSR_0
                     using (SqlConnection connection = new SqlConnection(Connection.GetSetring()))
                     {
                         await connection.OpenAsync();
-                        SqlCommand command = new SqlCommand("UPDATE UserPersonalInformation SET Email = @e, [Password]=@p, [Name]=@n, [Surname]=@s, [Gender]=@g,[Picture_name]=@pn, [Image]=@picture, [Date]=@d, [County]=@cn where Email = '" + FormLogin.email + "'", connection);
+                        SqlCommand command = new SqlCommand("UPDATE UserPersonalInformation SET Email = @e, [Name]=@n, [Surname]=@s, [Gender]=@g,[Picture_name]=@pn, [Image]=@picture, [Date]=@d, [County]=@cn where Email = '" + FormLogin.email + "'", connection);
                         command.Parameters.AddWithValue("@e", lblEmail.Text);
-                        command.Parameters.AddWithValue("@p", txt_Password.Text);
+                        if(txt_Password.Text != "")
+                            command.Parameters.AddWithValue(txt_Password.Text, txt_Password.Text);
                         command.Parameters.AddWithValue("@n", txt_name.Text);
                         command.Parameters.AddWithValue("@s", txt_Surname.Text);
                         command.Parameters.AddWithValue("@g", cmb_Gender.Text);

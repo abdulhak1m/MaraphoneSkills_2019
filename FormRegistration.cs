@@ -21,6 +21,11 @@ namespace WSR_0
             PassowrdBox(txt_Password, showPassword);
             PassowrdBox(txt_ConfirmPassword, showConfirmPassword);
             txt_ConfirmPassword.TextChanged += (s, e) => { CheckPassword(); };
+            txt_Password.TextChanged += (s, e) =>
+            {
+                if (txt_ConfirmPassword.Text != "")
+                    CheckPassword();
+            };
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
@@ -123,7 +128,7 @@ namespace WSR_0
 
                     for(int i = 0; i < txt_Password.TextLength; i++)
                     {
-                        if (Char.IsDigit(txt_Password.Text[i]))
+                        if (char.IsDigit(txt_Password.Text[i]))
                         {
                             digit = true;
                             break;
@@ -131,7 +136,7 @@ namespace WSR_0
                     }
                     for(int i = 0; i < txt_Password.TextLength; i++)
                     {
-                        if (Char.IsLower(txt_Password.Text[i]))
+                        if (char.IsLower(txt_Password.Text[i]))
                         {
                             lowChar = true;
                             break;

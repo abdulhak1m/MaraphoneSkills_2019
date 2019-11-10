@@ -43,8 +43,8 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblTime = new System.Windows.Forms.Label();
-            this.showButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.showButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -118,6 +118,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(288, 26);
             this.txtEmail.TabIndex = 3;
+            this.txtEmail.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtEmail_KeyDown);
             // 
             // label3
             // 
@@ -154,6 +155,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(288, 26);
             this.txtPassword.TabIndex = 3;
+            this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtPassword_KeyDown);
             // 
             // btnCancel
             // 
@@ -188,6 +190,10 @@
             this.lblTime.TabIndex = 6;
             this.lblTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            // 
             // showButton
             // 
             this.showButton.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -200,32 +206,30 @@
             this.showButton.TabIndex = 5;
             this.showButton.UseVisualStyleBackColor = true;
             // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
-            // 
             // FormLogin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1162, 493);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.showButton);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLogin";
             this.Load += new System.EventHandler(this.FormLogin_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormLogin_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

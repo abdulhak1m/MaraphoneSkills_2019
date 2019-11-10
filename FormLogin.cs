@@ -67,21 +67,36 @@ namespace WSR_0
                     using (SqlConnection connection = new SqlConnection(Connection.GetSetring()))
                     {
                         await connection.OpenAsync();
+                        SqlCommand command1 = new SqlCommand("SELECT * FROM Administration WHERE Email = '" + txtEmail.Text.Trim() + "' and [Password] = '" + txtPassword.Text.Trim() + "'", connection);
                         SqlCommand command = new SqlCommand(query, connection);
-                        SqlDataReader dataReader = command.ExecuteReader();
-                        if (dataReader.HasRows)
+                        using (SqlDataReader dataReader = command.ExecuteReader())
                         {
-                            while (dataReader.Read())
+                            if (dataReader.HasRows)
                             {
-                                email = dataReader["Email"].ToString();
+                                while (dataReader.Read())
+                                {
+                                    email = dataReader["Email"].ToString();
+                                }
+                                ActiveForm.Hide();
+                                FormMenuRunner runner = new FormMenuRunner();
+                                runner.ShowDialog();
+                                Close();
+                                return;
                             }
-                            ActiveForm.Hide();
-                            FormMenuRunner runner = new FormMenuRunner();
-                            runner.ShowDialog();
-                            Close();
                         }
-                        else
-                            MessageBox.Show("Не верный Email или Пароль. Пожалуйста, повторите попытку!", "Уведомление системы!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        
+                        using (SqlDataReader reader = command1.ExecuteReader())
+                        {
+                            if (reader.HasRows)
+                            {
+                                ActiveForm.Hide();
+                                FormAdmin admin = new FormAdmin();
+                                admin.ShowDialog();
+                                Close();
+                            }
+                            else
+                                MessageBox.Show("Не верный Email или Пароль. Пожалуйста, повторите попытку!", "Уведомление системы!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
                 catch (Exception ex)
@@ -91,6 +106,38 @@ namespace WSR_0
             }
             else
                 MessageBox.Show("Заполните поля!", "Уведомление системы!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void TxtEmail_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (this.GetNextControl(ActiveControl, true) != null)
+                {
+                    e.Handled = true;
+                    this.GetNextControl(ActiveControl, true).Focus();
+                }
+            }
+        }
+
+        private void TxtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (this.GetNextControl(ActiveControl, true) != null)
+                {
+                    e.Handled = true;
+                    this.GetNextControl(ActiveControl, true).Focus();
+                }
+            }
+        }
+
+        private void FormLogin_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyValue == (char)Keys.Enter)
+            {
+                btnLogin.PerformClick();
+            }
         }
     }
 }
